@@ -77,5 +77,175 @@ int main(void)
 
 }
 ````
-###### Arquivos de cabeçalho que terminam com .h referem-se a algum outro conjunto de código, como uma biblioteca, que podemos usar em nosso programa. Nós os incluímos com linhas como #include <stdio.h> , por exemplo, para a biblioteca de entrada / saída padrão, que contém a função printf.
+##### Arquivos de cabeçalho que terminam com .h referem-se a algum outro conjunto de código, como uma biblioteca, que podemos usar em nosso programa. Nós os incluímos com linhas como #include <stdio.h> , por exemplo, para a biblioteca de entrada / saída padrão, que contém a função printf.
 
+#### 🚩Ferramentas
+##### **help50** é um comando que podemos executar para explicar problemas em nosso código de uma forma mais amigável. Podemos executá-lo adicionando help50 à frente de um comando que estamos tentando, como help50 make hello , para obter conselhos que possam ser mais compreensíveis.
+##### Podemos executar **style50** , como style50 hello.c, com o nome do arquivo de nosso código-fonte, para ver sugestões de novas linhas e recuo.
+##### Podemos adicionar uma linha como // Cumprimentar o usuário, com duas barras // para indicar que a linha é um comentário e, em seguida, escrever o propósito do nosso código ou programa para nos ajudar a lembrar mais tarde.
+##### **check50** irá verificar a exatidão do nosso código com alguns testes automatizados.
+
+#### 🚩Comandos
+##### No terminal, podemos digitar **ls**, abreviação de list, para ver uma lista de arquivos e pastas na pasta atual:
+````
+~ / $ ls
+ola* ola.c
+````
+##### Também podemos remover arquivos com **rm** , com um comando como rm ola. Isso nos solicitará uma confirmação e podemos responder com y ou n para sim ou não.
+##### Com **mv** , ou **move** , podemos renomear arquivos. Com mv hello.c goodbye.c , renomeamos nosso arquivo ola.c com o nome goodbye.c
+##### Com **mkdir** , podemos criar pastas ou diretórios. Se executarmos mkdir lecture, veremos uma pasta chamada lecture e podemos mover arquivos para diretórios com um comando como mv ola.c lecture/.
+
+#### 🚩Tipos e Códigos de Formato
+##### Existem muitos tipos de dados que podemos usar para nossas variáveis, que indicam ao computador que tipo de dados eles representam:
+
+- *bool* , uma expressão booleana verdadeira ou falsa
+- *char* , um único caractere ASCII como a ou 2
+- *double* , um valor de vírgula flutuante com mais dígitos do que um float
+- *float* , um valor de vírgula flutuante ou número real com um valor decimal
+- *int* , inteiros até um certo tamanho ou número de bits
+- *long* , inteiros com mais bits, para que possam contar mais do que um int
+- *string* , uma linha de caracteres
+
+##### E a biblioteca CS50 tem funções correspondentes para obter entrada de vários tipos:
+
+- get_char 
+- get_double 
+- get_float 
+- get_int 
+- get_long 
+- get_string 
+
+##### Para **printf** , também, existem diferentes marcadores de posição para cada tipo:
+
+- *%c*  para caracteres
+- *%f*  para flutuadores, duplos
+- *%i*  para ints
+- *%li*  para longos
+- *%s*  para strings
+
+#### 🚩Operadores, limitações, truncamento
+##### Existem vários operadores matemáticos que podemos usar também:
+
+- +  para adição
+- -  para subtração
+- *  para multiplicação
+- /  para divisão
+- %  para calcular o resto
+
+##### Faremos um novo programa, additional.c:
+````
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void) 
+{
+     int x = get_int("x: ");
+ 
+     int y = get_int("y: ");
+
+     printf("%i\n", x + y); 
+}
+````
+
+##### Vejamos outro exemplo, truncation.c:
+````
+#include <cs50.h>
+#include <stdio.h>
+
+int main (void) 
+{
+     // Pega os números do usuário
+     int x = get_int("x: ");
+     int y = get_int("y: ");
+     
+     // Divide x por y
+     float z = x / y;
+     printf("%li\n", x + y); 
+}
+````
+
+#### 🚩Condições
+##### Podemos traduzir condições, ou blocos “se”, com:
+````
+if (x < y)
+{
+     printf (“x é menor que y\n”); 
+}
+````
+##### Podemos ter condições “if” e “else”:
+````
+if (x < y)
+{
+     printf(“x é menor que y\n”); 
+}
+else
+{
+    printf(“x não é menor que y\n”); 
+}
+````
+##### Vamos dar uma olhada em outro exemplo, conditions.c:
+````
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+     // Usuário entra com o valor de x
+     int x = get_int(“x: “);
+
+     // Usuário entra com o valor de y
+     int y = get_int(“y: “);
+
+     // Compara x e y
+     if (x < y)
+     {
+         printf(“x é menor que y\n”); 
+     }
+     else if (x > y)
+     {
+        printf(“x é maior que y\n”); 
+     }
+     else
+     {
+        printf(“x é igual a y\n”); 
+     }
+}
+````
+
+#### 🚩Expressões booleanas, loops
+##### Poderíamos fazer algo um certo número de vezes com while
+````
+int i = 0;
+while (i < 50)
+{
+    printf(“Oi mundo!\n”); 
+    i++;
+}
+````
+#### 🚩Abstração
+##### A abstração aqui leva a um design melhor, já que agora temos a flexibilidade de reutilizar nossa função miau em vários lugares no futuro.
+##### Vejamos outro exemplo de abstração, get_positive_int.c:
+````
+#include <cs50.h>
+#include <stdio.h>
+
+int get_positive_int(void);
+
+int main(void)
+{
+     int i = get_positive_int();
+     printf(“%i\n”);
+}
+
+// Solicita um número inteiro positivo ao usuário
+int get_positive_int(void)
+{
+     int n;
+     do
+     {
+          n = get_int(“Número positivo: \n”); 
+	 }
+     while(n < 1);
+     return n;
+}
+````
