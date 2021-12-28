@@ -6,11 +6,11 @@
 ##### Podemos pensar na resolução de problemas como o processo de pegar algumas informações (detalhes sobre nosso problema) e gerar alguns resultados (a solução para nosso problema). A “caixa preta” no meio é a ciência da computação, ou o código que aprenderemos a escrever.
 #### input ➡ ⬛ ➡ output
 
-🚩 #### Algoritmos
+#### 🚩Algoritmos
 ##### Agora que podemos representar inputs e outputs, podemos trabalhar na resolução de problemas.
 ##### Quando escrevemos programas usando algoritmos, geralmente nos preocupamos não apenas com o quão corretos eles são, mas também com o quão bem projetados eles são, considerando fatores como eficiência.
 
-🚩 #### Pseudocódigo
+#### 🚩Pseudocódigo
 ##### Podemos escrever pseudocódigo, que é uma representação de nosso algoritmo em inglês preciso (ou alguma outra linguagem humana):
 ```
 1 Pegue a lista telefônica
