@@ -68,3 +68,14 @@ int main(void)
 ````
 printf("olá, %s\n" ,resposta);
 ````
+
+#### 🚩Função principal(main) e arquivos de cabeçalho
+##### Em C, a primeira linha é int main (void), seguida por uma chave aberta { e uma chave fechada } , envolvendo tudo o que deveria estar em nosso programa.
+````
+int main(void)
+{ 
+
+}
+````
+###### Arquivos de cabeçalho que terminam com .h referem-se a algum outro conjunto de código, como uma biblioteca, que podemos usar em nosso programa. Nós os incluímos com linhas como #include <stdio.h> , por exemplo, para a biblioteca de entrada / saída padrão, que contém a função printf.
+
