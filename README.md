@@ -12,7 +12,7 @@
 
 🚩 #### Pseudocódigo
 ##### Podemos escrever pseudocódigo, que é uma representação de nosso algoritmo em inglês preciso (ou alguma outra linguagem humana):
-`
+```
 1 Pegue a lista telefônica
 2 Abra no meio da lista telefônica
 3 Olhe para a página
@@ -26,4 +26,4 @@
 11   Volte para a linha 3
 12 Caso contrário
 13   Desistir
-`
+```
