@@ -7,6 +7,11 @@ int main(void)
     	
     float troco = 0;
     int i = 0;
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int d = 0;
+    
     do
     {
         troco = get_float("Troco devido: ");
@@ -20,23 +25,27 @@ int main(void)
     while (centavos >= 25)
     {
         centavos = centavos - 25;
-        i++;
+        a++;
     }
     while (centavos >= 10)
     {
         centavos = centavos - 10;
-        i++;
+        b++;
     }
     while (centavos >= 5)
     {
         centavos = centavos - 5;
-        i++;
+        c++;
     }
     while (centavos > 0)
     {
         centavos = centavos - 1;
-        i++;
+        d++;
     }
-    
-    printf("Quantidade de moedas = %i\n", i);
+    i = a + b + c + d;
+    printf("Quantidade de moedas de ¢25 = %i\n", a);
+    printf("Quantidade de moedas de ¢10 = %i\n", b);
+    printf("Quantidade de moedas de ¢05 = %i\n", c);
+    printf("Quantidade de moedas de ¢01 = %i\n", d);
+    printf("Quantidade total de moedas  = %i\n", i);
 }
