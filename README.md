@@ -4,12 +4,12 @@
 ### Tabela de conteúdos
 =================
 <!--ts-->
-   * [O que é Ciência da Computação?](#O-que-é-Ciência-da-Computação?)
+   * [O que é Ciência da Computação?](#O-que-é-Ciência-da-Computação-?)
    * [Algoritmos](#Algoritmos)
    * [Pseudocódigo](#Pseudocódigo)
-   * [Concatenar com nulo](#Concatenar-com-nulo)   
-   * [Char Varchar](#Char-Varchar)
-   * [Trabalhar Data Hora](#Trabalhar-Data-Hora)
+   * [Linguagem em C](#Linguagem-em-C)   
+   * [CS50 IDE](#CS50-IDE)
+   * [Compilação](#Compilação)
    * [Conta Registros SQL](#Conta-Registros-SQL)
    * [Substring SQL](#Substring-SQL)
    * [Autor](#Autor)
@@ -24,7 +24,7 @@
 ##### Agora que podemos representar inputs e outputs, podemos trabalhar na resolução de problemas.
 ##### Quando escrevemos programas usando algoritmos, geralmente nos preocupamos não apenas com o quão corretos eles são, mas também com o quão bem projetados eles são, considerando fatores como eficiência.
 
-#### 🚩 Pseudocódigo
+#### 🚩Pseudocódigo
 ##### Podemos escrever pseudocódigo, que é uma representação de nosso algoritmo em inglês preciso (ou alguma outra linguagem humana):
 ```
 1 Pegue a lista telefônica
