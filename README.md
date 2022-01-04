@@ -10,7 +10,7 @@
    * [Linguagem em C](#Linguagem-em-C)   
    * [CS50 IDE](#CS50-IDE)
    * [Compilação](#Compilação)
-   * [Conta Registros SQL](#Conta-Registros-SQL)
+   * [Funções e argumentosL](#Funções-e-argumentos)
    * [Substring SQL](#Substring-SQL)
    * [Autor](#Autor)
 <!--te-->
