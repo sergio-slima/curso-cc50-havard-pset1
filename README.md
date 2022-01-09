@@ -10,8 +10,10 @@
    * [Linguagem em C](#Linguagem-em-C)   
    * [CS50 IDE](#CS50-IDE)
    * [Compilação](#Compilação)
-   * [Funções e argumentosL](#Funções-e-argumentos)
-   * [Substring SQL](#Substring-SQL)
+   * [Funções e argumentos](#Funções-e-argumentos)
+   * [Função principal(main) e arquivos de cabeçalho](#Função-principal(main)-e-arquivos-de-cabeçalho)
+   * [Ferramentas](#Ferramentas)
+   * [Comandos](#Comandos)
    * [Autor](#Autor)
 <!--te-->
 
