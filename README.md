@@ -11,9 +11,14 @@
    * [CS50 IDE](#CS50-IDE)
    * [Compilação](#Compilação)
    * [Funções e argumentos](#Funções-e-argumentos)
-   * [Função principal(main) e arquivos de cabeçalho](#Função-principal(main)-e-arquivos-de-cabeçalho)
+   * [Função principal main e arquivos de cabeçalho](#Função-principal-main-e-arquivos-de-cabeçalho)
    * [Ferramentas](#Ferramentas)
    * [Comandos](#Comandos)
+   * [Tipos e Códigos de Formato](Tipos-e-Códigos-de-Formato)
+   * [Operadores limitações truncamento](Operadores-limitações-truncamento)
+   * [Condições](Condições)
+   * [Expressões booleanas loops](Expressões-booleanas-loops)
+   * [Abstração](Abstração)
    * [Autor](#Autor)
 <!--te-->
 
@@ -85,7 +90,7 @@ int main(void)
 printf("olá, %s\n" ,resposta);
 ````
 
-#### 🚩Função principal(main) e arquivos de cabeçalho
+#### 🚩Função principal main e arquivos de cabeçalho
 ##### Em C, a primeira linha é int main (void), seguida por uma chave aberta { e uma chave fechada } , envolvendo tudo o que deveria estar em nosso programa.
 ````
 int main(void)
@@ -139,7 +144,7 @@ ola* ola.c
 - *%li*  para longos
 - *%s*  para strings
 
-#### 🚩Operadores, limitações, truncamento
+#### 🚩Operadores limitações truncamento
 ##### Existem vários operadores matemáticos que podemos usar também:
 
 - +  para adição
@@ -228,7 +233,7 @@ int main(void)
 }
 ````
 
-#### 🚩Expressões booleanas, loops
+#### 🚩Expressões booleanas loops
 ##### Poderíamos fazer algo um certo número de vezes com while
 ````
 int i = 0;
