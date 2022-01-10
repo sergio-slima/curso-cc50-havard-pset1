@@ -7,7 +7,7 @@
    * [O que é Ciência da Computação?](#O-que-é-Ciência-da-Computação-?)
    * [Algoritmos](#Algoritmos)
    * [Pseudocódigo](#Pseudocódigo)
-   * [Linguagem em C](#Linguagem-em-C)   
+   * [Linguagem em C](#Linguagem-em-C)
    * [CS50 IDE](#CS50-IDE)
    * [Compilação](#Compilação)
    * [Funções e argumentos](#Funções-e-argumentos)
@@ -53,9 +53,9 @@
 ##### Exemplo básico (Hello, Wold):
 ````
 #include <stdio.h>
-int main(void) 
+int main(void)
 {
-    printf("olá, mundo"); 
+    printf("olá, mundo");
 }
 ````
 
@@ -94,7 +94,7 @@ printf("olá, %s\n" ,resposta);
 ##### Em C, a primeira linha é int main (void), seguida por uma chave aberta { e uma chave fechada } , envolvendo tudo o que deveria estar em nosso programa.
 ````
 int main(void)
-{ 
+{
 
 }
 ````
@@ -129,12 +129,12 @@ ola* ola.c
 
 ##### E a biblioteca CS50 tem funções correspondentes para obter entrada de vários tipos:
 
-- get_char 
-- get_double 
-- get_float 
-- get_int 
-- get_long 
-- get_string 
+- get_char
+- get_double
+- get_float
+- get_int
+- get_long
+- get_string
 
 ##### Para **printf** , também, existem diferentes marcadores de posição para cada tipo:
 
@@ -158,13 +158,13 @@ ola* ola.c
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
      int x = get_int("x: ");
- 
+
      int y = get_int("y: ");
 
-     printf("%i\n", x + y); 
+     printf("%i\n", x + y);
 }
 ````
 
@@ -173,15 +173,15 @@ int main(void)
 #include <cs50.h>
 #include <stdio.h>
 
-int main (void) 
+int main (void)
 {
      // Pega os números do usuário
      int x = get_int("x: ");
      int y = get_int("y: ");
-     
+
      // Divide x por y
      float z = x / y;
-     printf("%li\n", x + y); 
+     printf("%li\n", x + y);
 }
 ````
 
@@ -190,18 +190,18 @@ int main (void)
 ````
 if (x < y)
 {
-     printf (“x é menor que y\n”); 
+     printf (“x é menor que y\n”);
 }
 ````
 ##### Podemos ter condições “if” e “else”:
 ````
 if (x < y)
 {
-     printf(“x é menor que y\n”); 
+     printf(“x é menor que y\n”);
 }
 else
 {
-    printf(“x não é menor que y\n”); 
+    printf(“x não é menor que y\n”);
 }
 ````
 ##### Vamos dar uma olhada em outro exemplo, conditions.c:
@@ -220,15 +220,15 @@ int main(void)
      // Compara x e y
      if (x < y)
      {
-         printf(“x é menor que y\n”); 
+         printf(“x é menor que y\n”);
      }
      else if (x > y)
      {
-        printf(“x é maior que y\n”); 
+        printf(“x é maior que y\n”);
      }
      else
      {
-        printf(“x é igual a y\n”); 
+        printf(“x é igual a y\n”);
      }
 }
 ````
@@ -239,7 +239,7 @@ int main(void)
 int i = 0;
 while (i < 50)
 {
-    printf(“Oi mundo!\n”); 
+    printf(“Oi mundo!\n”);
     i++;
 }
 ````
@@ -264,7 +264,7 @@ int get_positive_int(void)
      int n;
      do
      {
-          n = get_int(“Número positivo: \n”); 
+          n = get_int(“Número positivo: \n”);
 	 }
      while(n < 1);
      return n;
@@ -281,7 +281,7 @@ int get_positive_int(void)
 </a>
 
 Desenvolvido por:
-Sergio SLima 👋🏽
+Sergio Lima 👋🏽
 Entre em contato!
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/fagnerpsantos)](https://github.com/sergio-slima)
