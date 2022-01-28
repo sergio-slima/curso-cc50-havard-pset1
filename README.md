@@ -66,6 +66,18 @@ int main(void)
 ##### Nosso código-fonte foi escrito em caracteres que podemos ler, mas precisa ser compilado: convertido em código de máquina, padrões de zeros e uns que nosso computador possa entender diretamente.
 ##### Um programa chamado compilador pegará o código-fonte como entrada e produzirá o código de máquina como saída. No IDE CS50, já temos acesso a um compilador, por meio de um comando chamado make. Ex: make hello
 ##### Para executar nosso programa, digitaremos outro comando, ./hello, que procura na pasta atual , . , para um programa chamado hello e o executa.
+##### O make é na verdade apenas um programa que chama clang, um compilador, com opções. Ex: clang -o hello hello.c
+##### Compilar o código-fonte em código de máquina é feito em etapas menores:
+
+     - pré-processamento
+     - compilação
+     - montagem
+     - linkagem/vinculação
+
+     * O pré-processamento geralmente envolve linhas que começam com #, como #include. Por exemplo, #include <cs50.h> dirá ao clang para procurar por esse aruivo de cabeçalho, pois ele contém o contéudo que queremos incluir no nosso programa.
+     * A compilação pega nosso código-fonte, em C, e o converte em outro tipo de código-fonte chamado código assembly.
+     * Próximo etapa é pagar o código do assembly e traduzi-lo em instruções em binário, montando-o. As instruções em binário são chamadas de código de máquina, que a CPU  de um computador pode executar diretamente.
+     * A última etapa é a linkagem/vinculação, onde versões previamante compladas de bibliotecas que incluímos anteriormente, como cs50., são realmente combinadas com o binário de nosso programa.
 
 #### 🚩Funções e argumentos
 ##### Funções são pequenas ações ou verbos que podemos usar em nosso programa para fazer algo, e as entradas para funções são chamadas de argumentos.
