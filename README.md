@@ -19,6 +19,10 @@
    * [Condições](Condições)
    * [Expressões booleanas loops](Expressões-booleanas-loops)
    * [Abstração](Abstração)
+   * [Debugging/Depuração](Debugging/Depuração)
+   * [Memória](Memória)
+   * [Arrays/Vetores](Arrays/Vetores)
+   * [Strings](Strings)
    * [Autor](#Autor)
 <!--te-->
 
@@ -282,6 +286,27 @@ int get_positive_int(void)
      return n;
 }
 ````
+
+#### 🚩Debugging/Depuração
+##### Bugs são erros ou problemas em programs que fazem com que eles se comportem de maneira diferente do pretendido. O debugging é o processo de localização e correção desses bugs.
+##### No IDE 50 usa a ferramenta, debug50, para ajudar a depurar programas.
+
+#### 🚩Memória
+##### Tipos de espaço usado no IDE CS50:
+- bool 1 byte
+- char 1 byte
+- double 8 bytes
+- float 4 bytes
+- int 4 bytes
+- long 8 bytes
+- string ? bytes
+- ...
+
+#### 🚩Arrays/Vetores 
+##### Acontece que, na memória, podemos armazenar variáveis uma após a outra, consecutivamente, e acessá-las mais facilmente com loops. Em C, uma lista de valores armazenados um após o outro de forma contígua é chamada de array (uma espécie de matriz)
+
+#### 🚩Strings
+##### Strings são, na verdade, apenas matrizes de caracteres e definidas não em C, mas pela biblioteca CS50. Se tivéssemos um array chamado s, cada caractere pode ser acessado com s[0], s[1] e assim por diante.
 
 
 ## Autor 😎
