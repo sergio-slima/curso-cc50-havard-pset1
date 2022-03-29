@@ -290,6 +290,9 @@ int get_positive_int(void)
 #### 🚩Debugging/Depuração
 ##### Bugs são erros ou problemas em programs que fazem com que eles se comportem de maneira diferente do pretendido. O debugging é o processo de localização e correção desses bugs.
 ##### No IDE 50 usa a ferramenta, debug50, para ajudar a depurar programas.
+````
+Ex: debug50 ./projeto
+````
 
 #### 🚩Memória
 ##### Tipos de espaço usado no IDE CS50:
