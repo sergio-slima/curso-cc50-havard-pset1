@@ -12,11 +12,11 @@ int main(void)
     float f = 0;
     for (int i = 0; i < t; i++)
     {
-        if (s[i]>=97 && s[i]<=122)
+        if (s[i] >= 97 && s[i] <= 122)
         {
             l++;
         } 
-        else if (s[i]>=65 && s[i]<=90)
+        else if (s[i] >= 65 && s[i] <= 90)
         {
             l++;
         }
@@ -24,7 +24,7 @@ int main(void)
         {
             p++;    
         }
-        if (s[i]==33 || s[i]==63 || s[i]==46 || s[i]==59)
+        if (s[i] == 33 || s[i] == 63 || s[i] == 46 || s[i] == 59)
         {
             f++;
         }
@@ -38,10 +38,14 @@ int main(void)
     {
         printf("Grade: 16+");
         printf("\n");
-    } else if (indice <= 1){
+    }
+    else if (indice <= 1)
+    {
         printf("Grade: 1 \n");
         printf("\n");
-    } else {
+    }
+    else
+    {
         printf("Grade: %i\n", indice);   
     }
 }
