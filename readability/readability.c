@@ -7,11 +7,9 @@ int main(void)
 {
     string s = get_string("Input:  ");
     int t = strlen(s);
-    int l = 0;
-    int p = 0;
-    int f = 0;
-    float ml = 0;
-    float mf = 0;
+    float l = 0;
+    float p = 0;
+    float f = 0;
     for (int i = 0; i < t; i++)
     {
         if (s[i]>=97 && s[i]<=122)
@@ -32,12 +30,18 @@ int main(void)
         }
     }
     p++;
-    ml = round((l / p) * 100);
-    mf = round((f / p) * 100);
-    int indice = (0.0588 * ml) - (0.296 * mf) - 15.8;
-    printf("\n");
-    printf("Letras: %i\n", l);
-    printf("Palavras: %i\n", p);
-    printf("Frases: %i\n", f);
-    printf("Grade: %i\n", indice);
+    float ml = l / p * 100;
+    float mf = f / p * 100;
+    int indice = round(0.0588 * ml - 0.296 * mf - 15.8);
+    
+    if (indice >= 16)
+    {
+        printf("Grade: 16+");
+        printf("\n");
+    } else if (indice <= 1){
+        printf("Grade: 1 \n");
+        printf("\n");
+    } else {
+        printf("Grade: %i\n", indice);   
+    }
 }
